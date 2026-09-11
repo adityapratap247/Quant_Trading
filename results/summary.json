@@ -1,0 +1,77 @@
+{
+  "engine_config": {
+    "strategy_id": "grid_sar_v1",
+    "base_qty": 1.0,
+    "atr_multiplier": 1.0,
+    "stop_multiplier": 2.5,
+    "max_pyramids": 4,
+    "position_cap": 5.0,
+    "kill_switch_dd_pct": 0.15
+  },
+  "cost_model": {
+    "slippage_bps": 2.0,
+    "brokerage_per_order": 20.0,
+    "stt_ctt_bps": 1.0,
+    "exchange_txn_bps": 0.35,
+    "gst_rate": 0.18
+  },
+  "full_sample_metrics": {
+    "trades": 18,
+    "total_return_pct": 0.276,
+    "max_drawdown_pct": -1.155,
+    "sharpe_annualized_approx": 2.708,
+    "final_equity": 1002764.38,
+    "kill_switch_fired": false
+  },
+  "walk_forward_folds": [
+    {
+      "trades": 8,
+      "total_return_pct": 0.016,
+      "max_drawdown_pct": -0.015,
+      "sharpe_annualized_approx": 13.243,
+      "final_equity": 1000164.27,
+      "kill_switch_fired": false,
+      "fold": 0,
+      "start": "2026-01-02 09:15:00",
+      "end": "2026-01-03 00:10:00",
+      "bars": 180
+    },
+    {
+      "trades": 12,
+      "total_return_pct": -0.015,
+      "max_drawdown_pct": -0.029,
+      "sharpe_annualized_approx": -10.777,
+      "final_equity": 999850.4,
+      "kill_switch_fired": false,
+      "fold": 1,
+      "start": "2026-01-03 00:15:00",
+      "end": "2026-01-03 15:10:00",
+      "bars": 180
+    },
+    {
+      "trades": 21,
+      "total_return_pct": -0.048,
+      "max_drawdown_pct": -0.051,
+      "sharpe_annualized_approx": -33.015,
+      "final_equity": 999524.55,
+      "kill_switch_fired": false,
+      "fold": 2,
+      "start": "2026-01-03 15:15:00",
+      "end": "2026-01-04 06:10:00",
+      "bars": 180
+    },
+    {
+      "trades": 5,
+      "total_return_pct": 0.002,
+      "max_drawdown_pct": -0.008,
+      "sharpe_annualized_approx": 4.084,
+      "final_equity": 1000017.13,
+      "kill_switch_fired": false,
+      "fold": 3,
+      "start": "2026-01-04 06:15:00",
+      "end": "2026-01-04 11:10:00",
+      "bars": 60
+    }
+  ],
+  "n_bars": 600
+}
