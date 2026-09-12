@@ -32,13 +32,30 @@ and what's deliberately deferred.
   live handler without modification, but the async handler itself isn't
   built here
 
-## Running it
+## Running the Project
 
+### 1. Python Engine & Tests
 ```bash
 pip install -r requirements.txt
-pytest tests/ -v          # 39 tests
-python run_backtest.py    # writes results/{summary.json,blotter.csv,equity_curve.png}
+python -m pytest tests/ -v          # 39 tests passing
+python run_backtest.py              # writes results/{summary.json,blotter.csv,equity_curve.png}
 ```
+
+### 2. Interactive React Frontend Dashboard
+```bash
+cd frontend
+npm install
+npm run dev                         # Launches terminal dashboard at http://localhost:3000
+```
+
+### 3. Optional FastAPI Backend (Full Stack)
+```bash
+pip install fastapi uvicorn
+python api.py                       # Runs REST API on http://localhost:8000
+```
+
+### 4. Deploying for Recruiters (Vercel / Netlify / Cloud)
+See **[DEPLOYMENT.md](DEPLOYMENT.md)** for a 2-minute guide to deploying this interactive dashboard to Vercel/Netlify for free so recruiters can directly test and interact with your strategy online.
 
 ## Design principles this code follows
 
