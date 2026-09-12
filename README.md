@@ -1,5 +1,7 @@
 # Quant Developer Assignment -- Vera Developers
 
+Deployed link: [https://vera-quant-engine.vercel.app](https://vera-quant-engine.vercel.app/)
+
 Scope note: the brief (see `Instructions_Quant_Developer.docx`) covers a full
 production trading system -- live execution, broker/data integration, a
 macro regime engine, and more. Given the assignment timeline, this
